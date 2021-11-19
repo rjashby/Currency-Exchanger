@@ -1,7 +1,6 @@
 ## Currency Exchanger
 
-#### By
-* _Ryan Ashby_
+#### By _Ryan Ashby_
 
 #### _A simple currency exchange application via API calls_
 
