@@ -9,11 +9,11 @@ export default class CurrencyService {
         } else {
           reject(request.response);
         }
-        console.log(this.status);
+        //console.log(this.status);
       };
+      //console.log(Promise);
       request.open("GET", url, true);
       request.send();
-      console.log(request);
     }); 
   }
 }

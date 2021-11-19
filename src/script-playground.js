@@ -76,3 +76,18 @@
 //     console.log(CurrencyService.getExchange());
 //   });
 // });
+
+//BARE BONES
+
+// $(document).ready(function() {
+//   $('#calc').click(function() {
+//     let promise = CurrencyService.getExchange();
+//     promise.then(function(response) {
+//       const body = JSON.parse(response);
+//       $('#result').text(`Please just work ${body}`);
+//       $('#countryChoice').text(`Is this thing on?`);
+//     }, function(error) {
+//       $('.showErrors').text(`There was an error processing your request: ${error}`);
+//     });
+//   });
+// });

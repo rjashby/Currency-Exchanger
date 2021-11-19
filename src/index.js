@@ -9,16 +9,18 @@ $(document).ready(function() {
   $('#calc').click(function() {
     let amount = parseInt($('#amount').val());
     let choice = $('select#country option:selected').val();
-    let promise = CurrencyService.getExchange(amount);
+    let promise = CurrencyService.getExchange();
+    $('#countryChoice').text(`is this thing on? ${choice} ${amount}`);
     promise.then(function(response) {
       const responseGiven = JSON.parse(response);
       // let error = responseGiven.error-type;
-      $('#result').html(`${responseGiven.conversion_rates}`);
-      $('#countryChoice').html(choice);
-    }, function(error) {
-      $('#anyError').text(`There was an error processing your request: ${error}`);
-      console.log(responseGiven);
+      $('#result').text(`Hey you, please work ${responseGiven}`);
+      
+    }, function() {
+      $('#anyError').text(`There was an error processing your request`);
     });
-    window.scrollTo(0,document.body.scrollHeight);
   });
 });
+
+
+
