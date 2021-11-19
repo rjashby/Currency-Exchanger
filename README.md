@@ -8,11 +8,11 @@ By Ryan Ashby
 * [TECH1]
 * [TECH2]
 * [TECH3]
-* _VS Code Software_
-* _Git(Github)_
-* _Google Chrome Browser_
-* _HTML_
-* _CSS(Bootstrap)_
+* [_VS Code Software_]
+* [_Git(Github)_]
+* [_Google Chrome Browser_]
+* [_HTML_]
+* [_CSS(Bootstrap)_]
 * _Markdown_  
 * _JavaScript_
 * _jQuery_
