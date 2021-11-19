@@ -19,22 +19,23 @@
       </div>
       <div class="form-group">
         <h4>Country to Exchange With</h4>
-        <select id="planet" class="form-control">
+        <select id="country" class="form-control">
           <option value="none">Select A Country</option readonly>
-          <option value="australia">Australia - AUD</option>
-          <option value="canada">Canada - CAD</option>
-          <option value="uk">United Kingdom - GBP</option>
-          <option value="europe">European Union - EUR</option>
-          <option value="swiss">Switzerland - CHF</option>
+          <option value="AUD">Australia - AUD</option>
+          <option value="CAD">Canada - CAD</option>
+          <option value="GBP">United Kingdom - GBP</option>
+          <option value="EUR">European Union - EUR</option>
+          <option value="CHF">Switzerland - CHF</option>
+          <option value="GBF">Galactic Blemflarck - GBF</option>
         </select>
         <br>
       </div>
       <br>
-      <button type="submit" class="btn btn-light">Find Out Your Exchange Rate</button>
+      <button id="calc" type="submit" class="btn btn-light">Find Out Your Exchange Rate</button>
     </form>
     <div id="output">
-      <h3><strong>Results:</strong></h3>
-      <!-- <h4><strong>You are<span id="result"></span> years old on planet <span id="planet-choice"></span></strong></h4> -->
+      <h3><strong>Exchange Amount</strong></h3>
+      <h4><strong>You're exchange equals<span id="result"></span><span id="countryChoice"></span></strong></h4>
     </div>
   </div>
 </body>
