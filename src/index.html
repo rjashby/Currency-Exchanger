@@ -12,15 +12,15 @@
     <h4>Our rates are still legit, but you'd never know.</h4>
     <form id="currency">
       <div class="form-group">
-          <label for="amount">Enter the Amount:</label>
-          <input id="amount" type="number" placeholder="Amount to be converted" required>
+          <label for="amount">Enter the Amount: <strong>$</strong></label>
+          <input id="amount" type="text" placeholder="Amount in US Dollars" required>
       </div>
       <hr>
       </div>
       <div class="form-group">
-        <h4>Country to Exchange With</h4>
+        <h4>Country to exchange with:</h4>
         <select id="country" class="form-control">
-          <option value="none">Select A Country</option readonly>
+          <!-- <option value="none">Select A Country</option readonly> -->
           <option value="AUD">Australia - AUD</option>
           <option value="CAD">Canada - CAD</option>
           <option value="GBP">United Kingdom - GBP</option>
@@ -34,9 +34,9 @@
       <button id="calc" type="submit" class="btn btn-light">Find Out Your Exchange Rate</button>
     </form>
     <div id="output">
-      <h3><strong>Exchange Amount</strong></h3>
       <h4><strong>You're exchange equals<span id="result"></span><span id="countryChoice"></span></strong></h4>
     </div>
+    <div id="anyError"></div>
   </div>
 </body>
 </html>

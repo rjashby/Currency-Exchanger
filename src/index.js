@@ -4,17 +4,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import CurrencyService from './currency-service';
 
+
 $(document).ready(function() {
   $('#calc').click(function() {
-    let amount = $('#amount').val();
-    let choice = $('#country').val();
+    let amount = parseInt($('#amount').val());
+    let choice = $('select#country option:selected').val();
     let promise = CurrencyService.getExchange(amount);
     promise.then(function(response) {
-      const body = JSON.parse(response);
-      $('#result').html(`${body.main.humidity}%`);
-      $('.showTemp').text(`The temperature in Kelvins is ${body.main.temp} degrees.`);
+      const responseGiven = JSON.parse(response);
+      // let error = responseGiven.error-type;
+      $('#result').html(`${responseGiven.conversion_rates}`);
+      $('#countryChoice').html(choice);
     }, function(error) {
-      $('.showErrors').text(`There was an error processing your request: ${error}`);
+      $('#anyError').text(`There was an error processing your request: ${error}`);
+      console.log(responseGiven);
     });
+    window.scrollTo(0,document.body.scrollHeight);
   });
 });
