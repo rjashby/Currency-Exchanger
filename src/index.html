@@ -10,6 +10,32 @@
   <div class="container">
     <h1>Welcome to the World's Only Currency Exchange</h1>
     <h4>Our rates are still legit, but you'd never know.</h4>
+    <form id="currency">
+      <div class="form-group">
+          <label for="amount">Enter the Amount:</label>
+          <input id="amount" type="number" placeholder="Amount to be converted" required>
+      </div>
+      <hr>
+      </div>
+      <div class="form-group">
+        <h4>Country to Exchange With</h4>
+        <select id="planet" class="form-control">
+          <option value="none">Select A Country</option readonly>
+          <option value="australia">Australia - AUD</option>
+          <option value="canada">Canada - CAD</option>
+          <option value="uk">United Kingdom - GBP</option>
+          <option value="europe">European Union - EUR</option>
+          <option value="swiss">Switzerland - CHF</option>
+        </select>
+        <br>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-light">Find Out Your Exchange Rate</button>
+    </form>
+    <div id="output">
+      <h3><strong>Results:</strong></h3>
+      <!-- <h4><strong>You are<span id="result"></span> years old on planet <span id="planet-choice"></span></strong></h4> -->
+    </div>
   </div>
 </body>
 </html>
