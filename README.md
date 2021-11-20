@@ -10,8 +10,6 @@
 
 _This program allows the user to enter a currency amount in US Dollars and convert it into a number of different currencies based upon the current exchange rate. The exchange rate is determined via ExchangeRate-API._
 
-The website is visible on [GitHub Pages](https://rjashby.github.io//[PROJECT]/).
-
 ### Setup/Installation Requirements
 
 GIT and GitHUB
