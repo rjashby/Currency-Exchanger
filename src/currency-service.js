@@ -9,7 +9,6 @@ export default class CurrencyService {
         } else {
           reject(request.response);
         }
-        console.log(this.status);
       };
       request.open("GET", url, true);
       request.send();

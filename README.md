@@ -1,8 +1,8 @@
 ## Currency Exchanger
 
-#### By _Ryan Ashby_
-
 #### _A simple currency exchange application via API calls_
+
+#### By _Ryan Ashby_
 
 #### _accessible via: https://github.com/rjashby/Currency-Exchanger_
 

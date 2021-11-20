@@ -8,3 +8,13 @@ body {
   border: 5px solid gray;
   margin: 0;
 }
+
+#country {
+  width: auto;
+  border: solid black;
+  box-sizing: content-box;
+}
+
+input {
+  border: solid black;
+}
